@@ -1,0 +1,110 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -2; 
+        }
+        .Logo{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            
+        }
+        .Logo h1{
+            font-size: 24px;
+            color:white;
+            margin: 0;
+        }
+
+        .Logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .registration-container {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            z-index: 1;
+
+        }
+
+        .registration-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color:Black;
+        }
+
+        .registration-container label {
+            display: block;
+            margin-bottom: 5px;
+            color:black;
+        }
+
+        .registration-container input[type="text"],
+        .registration-container input[type="email"],
+        .registration-container input[type="password"],
+        .registration-container input[type="date"],
+        .registration-container select {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .registration-container input[type="text"]:hover,
+        .registration-container input[type="email"]:hover,
+        .registration-container input[type="password"]:hover,
+        .registration-container input[type="date"]:hover,
+        .registration-container input[type="submit"]:hover,
+        .registration-container select:hover{
+            transform: translate(-4px, -4px);
+        }
+
+        .registration-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .registration-container input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        .registration-container .login-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .registration-container .login-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .registration-container .login-link a:hover {
+            text-decoration: underline;
+        }
